@@ -121,8 +121,6 @@ class PostViewModel(application: Application) : AndroidViewModel(application) {
         _photo.value = PhotoModel(uri, file)
     }
 
-
-
     fun likeById(id: Long) {
         edited.value?.let {
             _postCreated.value = Unit

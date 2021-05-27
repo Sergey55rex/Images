@@ -60,8 +60,6 @@ class PostViewHolder(
                 onInteractionListener.onSeePhoto(post)
             }
 
-
-
             menu.setOnClickListener {
                 PopupMenu(it.context, it).apply {
                     inflate(R.menu.options_post)

@@ -70,11 +70,6 @@ class FeedFragment : Fragment() {
                     Intent.createChooser(intent, getString(R.string.chooser_share_post))
                 startActivity(shareIntent)
             }
-
-
-
-
-
         })
         binding.list.adapter = adapter
         viewModel.dataState.observe(viewLifecycleOwner) { state ->
@@ -99,8 +94,6 @@ class FeedFragment : Fragment() {
                     .show()
         }
 
-
-
         binding.swiperefresh.setOnRefreshListener {
             viewModel.refreshPosts()
         }
@@ -111,5 +104,4 @@ class FeedFragment : Fragment() {
 
         return binding.root
     }
-
 }
